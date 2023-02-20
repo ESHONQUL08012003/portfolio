@@ -1,0 +1,94 @@
+.about {
+
+
+  &__arrov {
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: var(--green);
+
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.my-contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//section__hero
+
+.section__hero {
+  display: flex;
+  gap: 20px;
+}
+
+
+.costumer {
+
+
+  &__list {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+
+    li {
+      width: 250px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.08);
+
+      &:hover {
+        background: rgba(255, 25, 205, 0.18);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    font-size: 35px;
+    background: #5e5e5e;
+    top: -18px;
+    border-radius: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media (max-width: 768px){
+  .costumer{
+    &__list{
+      row-gap: 30px;
+      li{
+        width: 350px;
+      }
+    }
+  }
+
+  .section__hero{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1068px){
+ .my-contact{
+   align-items: flex-start;
+   flex-direction: column;
+ }
+}
